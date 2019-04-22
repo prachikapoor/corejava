@@ -1,0 +1,48 @@
+
+public class Factory {
+	int capacity=10;
+	int current=0;
+	Object lock=new Object();
+	public void produce()
+	{
+			synchronized (lock) 
+			{
+				while(capacity>current)
+				{
+					current++;
+					System.out.println(current);
+				}
+				lock.notifyAll();
+	
+				// TODO Auto-generated method stub
+			}
+	}
+	
+
+	public void consume() {
+		synchronized (lock)
+		{
+			if(current==0)
+			{
+				try {
+					System.out.println("current is 0");
+					lock.wait();
+					}
+				
+			catch(InterruptedException e)
+					{
+					e.printStackTrace();
+					}
+			}
+		while(capacity>current)
+		{
+			current--;
+			System.out.println(current);
+		}
+
+		}
+		// TODO Auto-generated method stub
+		
+	}
+
+}

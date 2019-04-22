@@ -1,0 +1,54 @@
+package Filehandl;
+
+import java.util.Scanner;
+
+public class Miandiv {
+
+	@SuppressWarnings("null")
+	public static void main(String[] args) {
+		
+		
+		
+		// TODO Auto-generated method stub
+		Div d=new Div();
+		Scanner sc=new Scanner(System.in);
+		try
+		{
+			//Scanner sc=new Scanner(System.in);
+			String s1=sc.nextLine();
+			int a=Integer.parseInt(s1);
+			
+			String s2=sc.nextLine();
+			int b=Integer.parseInt(s2);
+			
+			
+			int s=d.divide(a,b);
+			System.out.println(s);
+			add(a,b);
+			
+			String st="hello";
+			String str=null;
+			
+			System.out.println(st.length());
+			System.out.println(str.length());
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("cant divide by 0 ");
+		}
+		catch(NullPointerException ne)
+	{
+		System.out.println("lenght iss null");
+	}
+		
+	}
+
+
+public  static void add (int a,int b)
+{
+	int r=a+b;
+	System.out.println(r);
+}
+	}
+
+

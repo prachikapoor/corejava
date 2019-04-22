@@ -1,0 +1,19 @@
+import java.util.Comparator;
+
+public class apnaCompare implements Comparator<Student> {
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		
+		
+		Integer a = new Integer(10);
+		Integer b = new Integer(30);
+		
+		
+		//return 0;
+	}
+
+	
+	
+	
+}

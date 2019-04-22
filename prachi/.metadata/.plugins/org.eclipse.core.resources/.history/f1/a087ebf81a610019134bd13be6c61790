@@ -1,0 +1,16 @@
+import java.util.Comparator;
+
+public class apnaCompare implements Comparator {
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		
+		//marks
+		
+		
+		
+		return 0;
+	}
+	
+	
+}

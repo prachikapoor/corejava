@@ -1,0 +1,10 @@
+package mobile;
+
+public class MainMob {
+Mobile m1=new Mobile("moto","4g",20000);
+Mobile m2=new Mobile("moto","4g",40000);
+Mobile m3=new Mobile("moto","3g",65000);
+Mobile m4=new Mobile("moto","4g",9000);
+Mobile m5=new Mobile("moto","3g",2000);
+
+}

@@ -1,0 +1,20 @@
+
+public class MainThread {
+public static void main (String[] args)	
+{
+	Threadsim tsim=new Threadsim();
+	tsim.setName("mythread");
+	tsim.start();
+	System.out.println(tsim.getName());
+
+	ThreadSec tsec=new ThreadSec();
+	Thread thr=new Thread(tsec);
+	thr.setName("mythread2");
+	thr.start();
+	System.out.println(thr.getName());
+	Thread th=new Thread();
+      // th.setName("main");
+   	System.out.println(th.getName());
+
+}
+}

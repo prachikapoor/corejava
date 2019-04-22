@@ -1,0 +1,28 @@
+package Mango;
+
+public class MangoException extends Exception
+{
+	
+ int marks;
+String msg;
+
+
+public MangoException()
+{
+//super(msg);
+}
+public MangoException(int marks,String msg)
+{
+	this.marks=marks;
+	this.msg=msg;
+	this.display();
+	}
+void display()
+{
+	System.out.println("marks\r\n"+marks+"msg is"+msg);
+}
+
+}
+
+
+

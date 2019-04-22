@@ -1,0 +1,66 @@
+package mobile;
+
+public class Mobile implements Comparable<Mobile> {
+	
+		private String  name;
+		private String mobile;
+		private int price;
+		
+		public Mobile()
+		{
+		
+		}
+		public Mobile(String name,String mobile,int price)
+		{
+			this.name=name;
+			this.mobile=mobile;
+			this.price=price;
+		}
+		
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public String getMobile() {
+			return mobile;
+		}
+		public void setMobile(String mobile) {
+			this.mobile = mobile;
+		}
+		public int getPrice() {
+			return price;
+		}
+		public void setPrice(int price) {
+			this.price = price;
+		}
+		@Override
+		public String toString() {
+			return "Mobile [name=" + name + ", mobile=" + mobile + ", price=" + price + "]";
+		}
+		@Override
+		public int compareTo(Mobile o) {
+			if(this.price==o.price)
+			{
+				return 0;
+			}
+			else if(this.price>o.price)
+			{
+				return -1;
+			}
+			else if(this.price<o.price)
+			{
+				return 1;
+			}
+			
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		
+
+}
+
+
+

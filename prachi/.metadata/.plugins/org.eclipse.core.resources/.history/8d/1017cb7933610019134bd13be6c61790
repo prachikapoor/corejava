@@ -1,0 +1,33 @@
+
+ class Try2
+{
+int rollno;
+String name1;
+int marks;
+
+
+ Try2(int rollno,String name1,int marks)
+		{
+	this.rollno=rollno;
+	this.name1=name1;
+	this.marks=marks;
+//	System.out.println(+rollno+""+name1+""+marks);
+		}
+
+	public String toString()
+			{
+		return "Try [rollno=" + rollno + ", name1=" + name1 + ", marks=" + marks + "]";
+			}
+	
+}
+ class Try1{
+	 
+public static void main(String[]  args)
+	{
+	 Try2 t1=new Try2(1,"mayank",50);
+	 Try2 t2=new Try2(2,"raj",40);
+	 System.out.println(t1);
+	 System.out.println(t2);
+	 
+	}
+ 			}

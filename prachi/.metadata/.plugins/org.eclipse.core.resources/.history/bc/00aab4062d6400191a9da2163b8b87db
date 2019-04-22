@@ -1,0 +1,26 @@
+package mobile;
+
+import java.io.FileOutputStream;
+
+public class Mainemp {
+	
+	public static void main(String[] args) {
+// TODO
+		WriteF();
+		ReadF();
+		
+
+	}
+public static void WriteF()
+{	Emp e=new Emp();
+	e.SetId(1);
+	e.SetName("raj");
+	e.SetSal(300000);
+	FileOutputStream fi=new FileOutputStream("D:\\Hello\\employ");
+	
+}
+public static void ReadF()
+{
+	
+}
+}

@@ -1,0 +1,43 @@
+package Filehandl;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Filehan {
+	public static void main(String []args)
+
+{
+
+		FileWrite();
+	//	FileRead();
+}
+public static void FileWrite()
+{
+	try {
+		@SuppressWarnings("resource")
+		FileOutputStream fs=new FileOutputStream("D:\\Hello\\c.txt");
+		String content="hello";
+		byte[] buffer=content.getBytes();
+		fs.write(buffer);
+	}
+	catch(IOException e)
+	{
+		e.printStackTrace();
+	}
+	catch(FileNotFoundException fe)
+	{
+		
+	}
+}
+/*public static void FileRead()
+{
+	try {
+		
+	}
+
+catch(FileNotFoundException e)
+{
+	}*/
+}
+}

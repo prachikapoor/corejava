@@ -1,0 +1,23 @@
+package Mango;
+
+import java.util.Comparator;
+
+public class CompName implements Comparator<Mangoes> {
+
+	@Override
+	public int compare(Mangoes o1, Mangoes o2) {
+		// TODO Auto-generated method stub
+		Integer a=new Integer(o1.getType().length());
+		Integer b=new Integer(o2.getType().length());
+		int flag=0;
+		if (a.equals(b))
+			flag= (o1.getType().compareTo(o2.getType()));
+		else if(a>b)
+			flag=1;
+		else if(a<b)
+			flag=-1;
+		
+		   return flag;
+	}
+
+}

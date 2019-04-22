@@ -1,0 +1,32 @@
+interface Myclg
+{
+	void board(int a);
+	void lib(int b);
+}
+public class Interface1 implements Myclg{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void board(int in) {
+		// TODO Auto-generated method stub
+		System.out.println(in);
+	}
+
+	@Override
+	public void lib(int in2) {
+		// TODO Auto-generated method stub
+		System.out.println(in2);
+	}
+ public void display()
+ {System.out.println(in);
+ 
+	 
+ }
+	
+	
+}
+

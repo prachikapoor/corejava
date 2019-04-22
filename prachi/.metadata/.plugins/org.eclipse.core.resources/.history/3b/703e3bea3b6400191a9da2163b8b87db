@@ -1,0 +1,19 @@
+package Filehandl;
+
+public class Miandiv {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Div d=new Div();
+		try
+		{
+			int s=d.divide(4,2);
+			System.out.println(s);
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("cant divide by 0 ");
+		}
+	}
+
+}

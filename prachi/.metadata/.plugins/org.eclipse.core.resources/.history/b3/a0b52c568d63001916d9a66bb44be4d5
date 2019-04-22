@@ -1,0 +1,40 @@
+package mobile;
+
+import java.util.TreeSet;
+import java.util.Iterator;
+
+public class ThreadMob implements Runnable{
+
+	TreeSet<Mobile>tree=null;
+	
+	ThreadMob()
+	{
+		
+	}
+	
+	ThreadMob(TreeSet<Mobile>tree)
+	{
+		this.tree=tree;
+	}
+	public void run()
+	{
+		//Thread t=Thread.currentThread();
+		System.out.println("mobiles with 4g");
+		
+		Iterator<Mobile>itr=tree.iterator();
+		while(itr.hasNext())
+		{
+		    Mobile m=itr.next();
+			String str=m.getMobile();
+			boolean b=str.equals("4g");
+			
+			if(b==true)
+			{
+				System.out.println(m.toString());
+			}
+			
+		}
+	
+	}
+
+}

@@ -1,0 +1,40 @@
+package Vehicle;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ThreadYear implements Runnable{
+	ArrayList<Vehicleshow>list=null;
+	ThreadYear()
+	{
+		
+	}
+	ThreadYear(ArrayList<Vehicleshow> list)
+	{
+	this.list=list;
+	}
+	
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("\nthread t2 started");
+		
+	//	@SuppressWarnings("rawtypes")
+		Iterator<Vehicleshow> iter1=list.iterator();
+		while(iter1.hasNext())
+		{ 
+			
+			Vehicleshow temp1= iter1.next();
+			
+			if(temp1.getYear()>2010)
+			{
+				System.out.println(temp1.toString());
+			}
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package Mango;
+
+public class MangoException extends Exception
+{
+public MangoException(String msg)
+{
+super(msg);
+}
+}

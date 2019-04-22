@@ -1,0 +1,32 @@
+package Filehandl;
+
+public class Miandiv {
+
+	public static void main(String[] args) {
+		
+		
+		
+		// TODO Auto-generated method stub
+		Div d=new Div();
+		try
+		{
+			int s=d.divide(4,2);
+			System.out.println(s);
+			
+			String st="hello";
+			String str=null;
+			System.out.println(str);
+			System.out.println(st);
+			
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("cant divide by 0 ");
+		}
+		catch(NullPointerException ne)
+	{
+		System.out.println("lenght iss null");
+	}
+
+}
+}

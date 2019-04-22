@@ -1,0 +1,49 @@
+package Vehicle;
+
+import java.util.ArrayList;
+import java.util.*;
+//import java.util.TreeSet;
+
+public class MThreadVehicle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Vehicleshow v=new Vehicleshow(1,"car","petrol",2016);
+		Vehicleshow v1=new Vehicleshow(3,"auto","petrol",2018);
+		Vehicleshow v2=new Vehicleshow(2,"bus","diesel",2010);
+		Vehicleshow v3=new Vehicleshow(5,"byke","diesel",2016);
+		Vehicleshow v4=new Vehicleshow(9,"aeroplane","petrol",2016);
+	
+		ComType com=new ComType();
+		ArrayList<Vehicleshow> list=new ArrayList();
+		list.add(v);
+		list.add(v1);
+		list.add(v2);
+		list.add(v3);
+		list.add(v4);
+
+		
+		Collections.sort(list);
+		
+		ThreadGen Mthread=new ThreadGen (list);
+		Thread t1=new Thread(Mthread);
+		t1.start();
+		
+	
+		ThreadYear Tthread=new ThreadYear(list);
+		Thread t2=new Thread(Tthread);
+		t2.start();
+		
+		
+		/*Iterator<Vehicleshow>iter=list.iterator();
+		while(iter.hasNext())
+		{
+			Vehicleshow temp=iter.next();
+			System.out.println(temp);
+		}
+	*/
+	
+	}
+
+}

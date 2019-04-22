@@ -1,0 +1,16 @@
+package mobile;
+
+import java.io.File;
+
+public class FileReadd {
+	@SuppressWarnings("unused")
+	public static void main(String []args)
+	{
+			File file=new File("C:\\");
+			File dir=new File(file,"Hello");
+			dir.mkdir();
+	
+	
+	
+	}
+	}

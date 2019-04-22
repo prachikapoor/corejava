@@ -1,0 +1,62 @@
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.TreeSet;
+
+public class TreeSetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Student s = new Student(1,"Modi",65);
+		Student s1 = new Student(3,"Raj",65);
+		
+		Student s2 = new Student(56,"Akhilesh",26);
+		Student s3 = new Student(23,"prachi",49);
+		
+		Student s4 = new Student(14,"nikhil",80);
+		
+		
+		apnaCompare apc = new apnaCompare();
+			
+		TreeSet<Student> std = new TreeSet<>(apc);
+		
+		std.add(s);
+		std.add(s1);
+		std.add(s2);
+		std.add(s3);
+		std.add(s4);
+			
+
+		Iterator<Student> iter = std.iterator();
+	
+		
+
+	while(iter.hasNext()) {
+		
+			Student temp = iter.next();
+				//int a=temp.getMark();
+			try {
+				if(temp.getMark()>35)
+					System.out.println(temp.toString());
+				else
+					 throw new StudentException("hello");
+				
+			}
+			catch(StudentException e)
+			{
+				e.printStackTrace();
+				//System.out.println("no such marks");
+			}
+			
+			
+			//System.out.println(temp.getMark());
+			
+			//System.out.println(temp.getName() + " " +temp.getName().length());
+	}
+	
+	}
+		
+	}
+	
+
+

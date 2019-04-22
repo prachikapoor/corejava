@@ -1,0 +1,12 @@
+import java.util.TreeSet;
+
+/*
+public class Capna {
+	Capna a=new Capna();
+	 TreeSet<Try2> s=new TreeSet<>(a);
+	 s.add(t1);
+	 s.add(t2);
+	 System.out.println(t1);
+	 
+	}
+}*/

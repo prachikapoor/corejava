@@ -1,0 +1,10 @@
+interface Myclg
+{
+	void board(int a);
+	void lib(int b);
+}
+public class MainInter implements Myclg {
+
+	int ec=2;
+	int cs=5;
+}

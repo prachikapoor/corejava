@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class MainGen {
+
+	public static void main(String[] args) {
+		ArrayList<Integer>list=new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		System.out.println(list);
+	
+		LinkedList<String>linkedList=new LinkedList<>();
+		linkedList.add("raj");
+		System.out.println(linkedList);
+
+	
+	
+	
+	
+	}
+
+}
